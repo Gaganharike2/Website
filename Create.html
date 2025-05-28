@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .signup-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+      border: 1px solid #ffcccc;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #b30000;
+    }
+
+    .signup-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .signup-container input[type="text"],
+    .signup-container input[type="email"],
+    .signup-container input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ff4d4d;
+      border-radius: 4px;
+      transition: border-color 0.3s;
+    }
+
+    .signup-container input:focus {
+      border-color: #cc0000;
+      outline: none;
+    }
+
+    .signup-container input[type="submit"] {
+      padding: 10px;
+      background-color: #e60000;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .signup-container input[type="submit"]:hover {
+      background-color: #b30000;
+    }
+
+    .signup-container p {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .signup-container a {
+      text-decoration: none;
+      color: #e60000;
+    }
+
+    .signup-container a:hover {
+      text-decoration: underline;
+      color: #b30000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="signup-container">
+  <h2>Create Account</h2>
+  <form action="#" method="post">
+    <input type="text" name="fullname" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+    <input type="submit" value="Create Account" />
+  </form>
+  <p>Already have an account? <a href="Sign.html">Sign in</a></p>
+</div>
+
+</body>
+</html>

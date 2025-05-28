@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color:red;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.logo{
+    margin-right: 20px;
+    height:150px;
+    width:200px;
+    border-radius: 50%;
+    background-color:transparent;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav ul li{
+    display: inline;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav ul li a:hover{
+    color: #ffcc00;
+}
+.nav ul li a.active{
+    color: #ffcc00;
+}
+.nav ul li a:focus{
+    outline: none;
+    color: #ffcc00;
+}
+.Signin{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    font-family: Arial,sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.Signin a{
+    color: white;
+    text-decoration: none;
+}
+main{
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    font-size:20px;
+    color:black;
+    margin: 20px 0;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    text-align: justify;
+    padding: 0 20px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.search input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search button {
+  padding: 10px 20px;
+  background-color:black;
+  border: 2px solid ;
+  color: white;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+p{
+    font-size:18px;
+    color:BLACK;
+    margin-top: 10px;
+    line-height: 24px;
+    font-weight:bold;
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    text-align: center;
+    padding: 0 10px;
+}
+footer{
+    background-color:red;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer p {
+    margin: 0;
+}
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav ul li {
+        display: block;
+    }
+    .Signin {
+        margin-top: 10px;
+    }
+}
